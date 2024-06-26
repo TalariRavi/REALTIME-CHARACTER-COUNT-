@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="realtime.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Real-time Character Counter</h2>
+        <textarea class="textarea" id="textarea" maxlength="100" placeholder="Please write your text here.."></textarea>
+        <div class="counter-container">
+            <p>Total Character: <span class="total-character" id="total-character">0</span></p>
+            <p>Reamining: <span class="Reamining-character" id="Reamining-character">100</span></p>
+        </div>
+    </div>
+
+    <script>
+        const textarea1=document.getElementById('textarea');
+        const totalcharacter1=document.getElementById('total-character');
+        const remainingcharacter1=document.getElementById('Reamining-character')
+
+        textarea1.addEventListener("keyup",()=>{
+            console.log("key presses");
+            updateconuter();
+        })
+
+        function updateconuter(){
+            totalcharacter1.innerText=textarea1.value.length;
+            remainingcharacter1.innerText=textarea1.getAttribute('maxlength')-textarea1.value.length;
+        }
+    </script>
+</body>
+</html>

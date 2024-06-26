@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+.container{
+    background-color: rgb(163, 230, 232);
+    width: 400px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px;
+    
+}
+.textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: none;
+}
+.counter-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.conter-container p{
+    font-size: 17px;
+}
+.total-character{
+    color: blue;
+}
+.Reamining-character{
+    color: red;
+}
